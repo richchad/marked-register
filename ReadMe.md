@@ -12,6 +12,9 @@ Marked registers are retained by local authorities and can be provided to politi
 #### Data protection
 All marked registers are protected by GDPR - the purpose of this readme is to demonstrate some of the work without revealing any sensitive information. All additional work is stored in a private repository.
 
+### Summary of digitisation strategy¶
+Crop each voter from the marked register, keeping record of the order they appear in the register. Given a csv file of the electoral register, use the image order and pytesseracts interpretation of the image text to map images to the correct elector in the csv. Train machine learning model on labelled (voted/ not voted) images to create a model that predicts whether the register has been marked (a vote has been cast).
+
 
 ```python
 
